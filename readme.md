@@ -46,7 +46,7 @@ module "region_us_east_1" {
   }
 }
 ```
-The only downside to this is you have to declare the modules more than once, one for each reach. Certainly more duplicated code than what Terragrunt offers. 
+The only downside to this is you have to declare the modules more than once, one for each region. Certainly more duplicated code than what Terragrunt offers. 
 
 # Authentication
 This is not a tutorial on authentication. But:
