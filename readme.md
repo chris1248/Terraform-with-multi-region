@@ -1,6 +1,8 @@
 # How to Deploy to multiple regions
 Demonstrates how to deploy to multiple regions using either Terraform or Terragrunt.
 
+This demonstration code uses as an example, the creation of a VPC, a security group and some subnets underneath it. To make this more challenging the example demonstrates how to make some settings in the VPC and subnets different for each region.
+
 # How it works for Terragrunt
 This uses one set of terragrunt configuration files for ALL regions. Other online guides I have seen online suggest duplicating an entire set of terragrunt configuration files for each region. Terragrunt was founded on the principle of 'Don't Repeat Yourself' (DRY). Unfortunately that principle fell flat on it's face when it comes to multi-region deployments. But this approach gets around the endless duplication and uses one set of configs for all regions. 
 
